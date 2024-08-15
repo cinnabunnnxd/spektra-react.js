@@ -1,38 +1,165 @@
-.App {
+*,html {
+  margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Navbar*/
+
+.navbar {
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: normal;
+  margin-inline: auto;
+  
+}
+
+.header {
+  padding: 10px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;    
+}
+
+.navlink {
+  padding: 5px;
+  display: flex;
+  max-width: 1100px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: normal;
+  margin-inline: auto;
+  
+}
+
+.navbar button {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(222, 216, 255);
+  border-radius: 5px;
   text-align: center;
+  font-weight: bold;
+  transition: 0.6s;
+  font-size: normal;
+  width: 105px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar button:hover {
+  background-color: pink;
+  color: black;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.con-btn {
+  margin-left: auto;
+  width: 150px;
+}
+
+.menuElement {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 124px;
+  right: -100px;
+  padding: 10px;
+}
+
+.menuElement a:hover{
+  text-decoration: underline;
+}
+
+.menuElement a:active {
+  text-decoration: underline;
+}
+
+
+.toRight {
+  right: 0px;
+}
+.menuElement a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .menuElement {
+      display: flex;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 20px;
+  transition: 0.8s;
+  margin: 0px 5px;
+}
+
+
+.navbar ul{
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+@media (max-width: 640px) {
+  .navbar ul {
+      display: none;
+  }
+
+  .menu{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 20px;
+      cursor: pointer;
+  }
+  .menu .lines{
+      width: 100%;
+      height: 2px;
+      background-color: black;
+  }
+}
+
+
+.navbar ul a:hover {
+  background-color: rgb(255, 189, 189);
   color: white;
+  box-shadow: 0 0 10px black 0.5s;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/*Contact Section*/
+
+.coa-5 h1 {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coa-5 {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 400px;
 }

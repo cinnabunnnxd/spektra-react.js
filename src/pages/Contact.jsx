@@ -15,7 +15,7 @@ const Contact = () => {
                         <div class="coa-container-5">
                             <div class="coa-5">
                                 <h1>Discover the full range of our professional surveying solutions. Explore Our Services and find out how we
-                                    can support your next project.
+                                    can support your next project. tangina mo 
                                 </h1>
                                 <a href="services.html"><button>View Services</button></a>
 
